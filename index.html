@@ -1,13 +1,228 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0d0d0d;
+        color: white;
+        overflow-y: scroll;
+    }
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 0 20px;
+    }
+    header {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1 {
+        color: #ccff00;
+    }
+    nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a:hover {
+        color: #ccff00;
+    }
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+    }
+    .hero img {
+        width: 220px;
+        border-radius: 50%;
+        border: 3px solid #ccff00;
+    }
+    .hero-text {
+        max-width: 500px;
+        margin: 20px;
+    }
+    .hero-text h2 {
+        color: #ccff00;
+        font-size: 2em;
+    }
+    .button {
+        background-color: #cd2054;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+    .stats {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        background-color: #1a1a1a;
+        border-radius: 10px;
+    }
+    .stat {
+        margin: 10px;
+        text-align: center;
+    }
+    .timeline {
+        padding: 40px 0;
+    }
+    .timeline-item {
+        margin-bottom: 20px;
+        border-left: 3px solid #ccff00;
+        padding-left: 15px;
+    }
+    .social-links {
+        margin-top: 15px;
+    }
+    .social-links a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.5em;
+        transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+        color: #ccff00;
+    }
+    .gallery {
+        padding: 40px 0;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .gallery-grid img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border: 2px solid #ccff00;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ccff00;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-grid img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #ccff00;
+    }
+    footer {
+        text-align: center;
+        padding: 20px 0;
+    }
+    @media (max-width: 768px) {
+        .container {
+            max-width: 100%;
+        }
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+<body>
 
-<html>
-  <head>
-    <title>Anurag Shre</title>
-    <link rel="icon" type="image/jpg" href="assets/favicon.png" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<div class="container">
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#internships">Internships</a>
+    </nav>
+</header>
 
-  <body>
-    
-  </body>
+<section class="hero" id="about">
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHM2oUn-UnBvw/profile-displayphoto-crop_800_800/B4DZfeuGykGYAM-/0/1751788319747?e=1758153600&v=beta&t=rlNmee0juzmgLxEZDnDiPtJC7AOWoYDDfJ2MYqtOCn8 " alt="Profile Photo">
+    <div class="hero-text">
+        <h2>Hi, I’m <i> JHON DOE</i></h2>
+        <p> 100 word about me</p>
+        <a href="#contact" class="button">Contact Me</a>
+        <div class="social-links">
+            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat">
+        <h3>5+</h3>
+        <p>Projects Completed</p>
+    </div>
+    <div class="stat">
+        <h3>3+</h3>
+        <p>Courses Completed</p>
+    </div>
+    <div class="stat">
+        <h3>2+</h3>
+        <p>Years Learning</p>
+    </div>
+</section>
+
+<section class="timeline" id="education">
+    <h2 style="color:#ccff00;">My Education</h2>
+    <div class="timeline-item">
+        <h3>2025 - Present</h3>
+        <p>B.Sc AIML & Cybersecurity - xyz </p>
+    </div>
+    <div class="timeline-item">
+        <h3>2022- 2024</h3>
+        <p>Higher Secondary Education - dummy</p>
+    </div>
+    <div class="timeline-item">
+        <h3>2016 - 2022</h3>
+        <p>Secondary Education - uts</p>
+    </div>
+</section>
+
+<section class="timeline" id="internships">
+    <h2 style="color:#ccff00;">Internships</h2>
+    <div class="timeline-item">
+        <h3>2025 - Present</h3>
+        <p>nbdt7ujy</p>
+    </div>
+    <div class="timeline-item">
+        <h3>2025 - present</h3>
+        <p>jgfygjh</p>
+    </div>
+
+<section class="gallery" id="gallery">
+    <h2 style="color:#ccff00; text-align:center;">Gallery</h2>
+    <div class="gallery-grid">
+        <a href="pok.jpg" target="_blank"><img src="images/photo1.jpg" alt="Gallery Item 1"></a>
+        <a href="images/photo2.jpg" target="_blank"><img src="images/photo2.jpg" alt="Gallery Item 2"></a>
+        <a href="images/photo3.jpg" target="_blank"><img src="images/photo3.jpg" alt="Gallery Item 3"></a>
+</section>
+
+<footer id="contact">
+    <p>© 2025 My Portfolio</p>
+    <div class="social-links">
+        <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</footer>
+</div>
+
+</body>
 </html>
