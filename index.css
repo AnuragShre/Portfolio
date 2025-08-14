@@ -1,14 +1,16 @@
 body {
   background-color: #8fd6e1;
   display: flow-root;
-  margin: 5px;
+  padding: 20px;
   height: 100vh;
+  background-image: url(/assets/root\ bg.jpg);
+  background-size: cover;
 }
 
 #main {
   margin-right: auto;
   float: left;
-  background-color: #1597bb;
+  background-color: #1597bb4d;
   display: flow-root;
   border-radius: 20px;
   border-color: #7b113a;
@@ -24,17 +26,28 @@ body {
 #scroll {
   margin-right: auto;
   float: right;
-  background-color: #1597bb;
+  
   display: flow-root;
   border-radius: 20px;
   border-color: #7b113a;
   border-width: 5px;
-  padding: 5px;
   border-style: solid;
   height: 100vh;
-  width: 150px;
+  width: 100px;
+  position: sticky;
+  background-image: url(/assets/wall.jpg);
+  background-size: cover;
+  
 }
+#overlayed-scroll{
+  background-color: #1597bb8a;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
 
+}
 #cogHeart {
   float: left;
+  position: absolute;
+  
 }
