@@ -1,0 +1,9 @@
+body {
+  background-color: #8fd6e1;
+  display: flow-root;
+}
+
+#cogHeart {
+  float: right;
+  margin-right: auto;
+}
