@@ -1,9 +1,40 @@
 body {
   background-color: #8fd6e1;
   display: flow-root;
+  margin: 5px;
+  height: 100vh;
+}
+
+#main {
+  margin-right: auto;
+  float: left;
+  background-color: #1597bb;
+  display: flow-root;
+  border-radius: 20px;
+  border-color: #7b113a;
+  border-width: 5px;
+  padding: 5px;
+  border-style: solid;
+  height: 100vh;
+  width: calc(100vw - 220px);
+}
+
+/* I want to implement a feature where the cogs rotate in anti-parallel as we scroll */
+
+#scroll {
+  margin-right: auto;
+  float: right;
+  background-color: #1597bb;
+  display: flow-root;
+  border-radius: 20px;
+  border-color: #7b113a;
+  border-width: 5px;
+  padding: 5px;
+  border-style: solid;
+  height: 100vh;
+  width: 150px;
 }
 
 #cogHeart {
-  float: right;
-  margin-right: auto;
+  float: left;
 }
