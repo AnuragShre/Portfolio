@@ -1,53 +1,59 @@
 body {
   background-color: #8fd6e1;
   display: flow-root;
-  padding: 20px;
-  height: 100vh;
+  height: 95vh;
   background-image: url(/assets/root\ bg.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #main {
-  margin-right: auto;
-  float: left;
-  background-color: #1597bb4d;
+  background-color: #3babca4d;
   display: flow-root;
   border-radius: 20px;
   border-color: #7b113a;
   border-width: 5px;
   padding: 5px;
   border-style: solid;
-  height: 100vh;
-  width: calc(100vw - 220px);
+  height: 95vh;
+  width: 95vw;
+  margin: auto;
 }
 
 /* I want to implement a feature where the cogs rotate in anti-parallel as we scroll */
 
 #scroll {
-  margin-right: auto;
+  margin: auto;
   float: right;
-  
+
   display: flow-root;
   border-radius: 20px;
-  border-color: #7b113a;
+  margin: 5px;
+  border-color: #6d1414;
   border-width: 5px;
   border-style: solid;
-  height: 100vh;
-  width: 100px;
+  height: 92vh;
+  width: 70px;
   position: sticky;
-  background-image: url(/assets/wall.jpg);
-  background-size: cover;
-  
 }
-#overlayed-scroll{
-  background-color: #1597bb8a;
+#overlayed-scroll {
+  background-color: #00d9ff6c;
   height: 100%;
   width: 100%;
   border-radius: 15px;
-
 }
 #cogHeart {
+  width: 70%;
+  position: relative;
   float: left;
-  position: absolute;
-  
+  display: block;
+}
+
+#cogHeart2 {
+  width: 60%;
+  float: right;
+  display: block;
+  position: relative;
+  margin-top: 1px;
 }
